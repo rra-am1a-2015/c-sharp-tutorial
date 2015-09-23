@@ -25,23 +25,25 @@ namespace Lesson7_UserInput
                               "4) Berekening oppervlakte van een elipse\n" +
                               "\n\n" +
                               "Maak uw keuze door een getal van 1 t/m 4 in te voeren: ");
-            string invoer = Console.ReadLine();
-            int keuzeGetal = Convert.ToInt32(invoer); // int keuzeGetal = (int)invoer
 
-            if ( keuzeGetal == 1)
+            ConsoleKeyInfo invoer = Console.ReadKey();
+
+            //int keuzeGetal = Convert.ToInt32(invoer); // int keuzeGetal = (int)invoer
+
+            if ( invoer.KeyChar == (Char)ConsoleKey.D1)
             {
                 Console.WriteLine("\n\nDit programma telt twee getallen bij elkaar op."); ;
                 Console.Write("Geef het eerste gehele getal: ");
 
-                invoer = Console.ReadLine();
+                string invoer1 = Console.ReadLine();
 
-                int eersteGetal = Convert.ToInt32(invoer);
+                int eersteGetal = Convert.ToInt32(invoer1);
 
                 Console.Write("Geeft het tweede gehele getal: ");
 
-                invoer = Console.ReadLine();
+                invoer1 = Console.ReadLine();
 
-                int tweedeGetal = Convert.ToInt32(invoer);
+                int tweedeGetal = Convert.ToInt32(invoer1);
 
                 long som = eersteGetal + tweedeGetal;
 
@@ -53,24 +55,24 @@ namespace Lesson7_UserInput
                 //Console.WriteLine("U heeft het getal {0} ingevoerd.", eersteGetal);
 
             }
-            else if (keuzeGetal == 2)
+            else if (invoer.KeyChar == (char)ConsoleKey.D2)
             {
                 Console.WriteLine("\n\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 
                 Console.WriteLine("Dit programma kan twee kommagetallen met elkaar vermenigvuldigen.");
                 Console.Write("Geef de waarde van het eerste kommagetal: ");
 
-                invoer = Console.ReadLine();
+                string invoer2 = Console.ReadLine();
 
                 float eersteKommaGetal, tweedeKommaGetal, product;
 
-                eersteKommaGetal = Convert.ToSingle(invoer);
+                eersteKommaGetal = Convert.ToSingle(invoer2);
 
                 Console.Write("Geef de waarde van het tweede kommagetal: ");
 
-                invoer = Console.ReadLine();
+                invoer2 = Console.ReadLine();
 
-                tweedeKommaGetal = Convert.ToSingle(invoer);
+                tweedeKommaGetal = Convert.ToSingle(invoer2);
 
                 product = eersteKommaGetal * tweedeKommaGetal;
 
@@ -78,37 +80,37 @@ namespace Lesson7_UserInput
                                     tweedeKommaGetal, Math.Round(Convert.ToDecimal(product), 2));
 
             }
-            else if (keuzeGetal == 3)
+            else if (invoer.KeyChar == (char)ConsoleKey.D3)
             {
                 Console.WriteLine("\n\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 
                 Console.WriteLine("Dit programma berekent de omtrek van een cirkel.");
                 Console.Write("Geef de straal van de cirkel: ");
 
-                invoer = Console.ReadLine();
+                string invoer3 = Console.ReadLine();
 
-                double straal = Convert.ToSingle(invoer);
+                double straal = Convert.ToSingle(invoer3);
                 double omtrek = 2 * Math.PI * straal;
 
                 Console.WriteLine("De omtrek van de cirkel met straal {0} is: {1}", straal.ToString(),
                                     Math.Round(omtrek, 0).ToString());
             }
-            else if (keuzeGetal == 4)
+            else if (invoer.KeyChar == (char)ConsoleKey.D4)
             {
                 Console.WriteLine("\n\n***************************************************************");
 
                 Console.WriteLine("Dit programma berekent de oppervlakte van een elipse.");
                 Console.Write("Geef de lengte van de lange as van de elipse: ");
 
-                invoer = Console.ReadLine();
+                string invoer4 = Console.ReadLine();
 
-                double langeAs = Convert.ToDouble(invoer);
+                double langeAs = Convert.ToDouble(invoer4);
 
                 Console.Write("Geef de lengte van de korte as van de elipse: ");
 
-                invoer = Console.ReadLine();
+                invoer4 = Console.ReadLine();
 
-                double korteAs = Convert.ToDouble(invoer);
+                double korteAs = Convert.ToDouble(invoer4);
 
                 double oppervlakteElipse = Math.PI * langeAs * korteAs;
 
