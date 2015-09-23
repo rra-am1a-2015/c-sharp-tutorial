@@ -58,7 +58,7 @@ namespace Lesson10_switch
             }
             */
             int getal = 100;
-            dagVanDeWeek dag = dagVanDeWeek.Zaterdag;
+            dagVanDeWeek dag = dagVanDeWeek.Vrijdag;
 
             switch ( dag )
             {

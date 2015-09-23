@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMI-Calculator", "BMI-Calcu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson10-switch", "Lesson10-switch\Lesson10-switch.csproj", "{347726CD-A76D-4DC2-AB99-2F25311088A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson11-While", "Lesson11-While\Lesson11-While.csproj", "{32B69404-DFBB-4A51-A9F6-29526FE56D23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{347726CD-A76D-4DC2-AB99-2F25311088A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{347726CD-A76D-4DC2-AB99-2F25311088A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{347726CD-A76D-4DC2-AB99-2F25311088A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32B69404-DFBB-4A51-A9F6-29526FE56D23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32B69404-DFBB-4A51-A9F6-29526FE56D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32B69404-DFBB-4A51-A9F6-29526FE56D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32B69404-DFBB-4A51-A9F6-29526FE56D23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
