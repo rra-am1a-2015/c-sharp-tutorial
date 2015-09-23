@@ -35,9 +35,13 @@ namespace Lesson7_UserInput
                 Console.WriteLine("\n\nDit programma telt twee getallen bij elkaar op."); ;
                 Console.Write("Geef het eerste gehele getal: ");
 
-                string invoer1 = Console.ReadLine();
+                object invoer1 = Console.ReadLine();
+
+                Console.WriteLine("De invoer is van het type: {0}", invoer1.GetType());
 
                 int eersteGetal = Convert.ToInt32(invoer1);
+
+                
 
                 Console.Write("Geeft het tweede gehele getal: ");
 
