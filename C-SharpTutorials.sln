@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson11-While", "Lesson11-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson-readkey", "Lesson-readkey\Lesson-readkey.csproj", "{0DEC019A-C893-4AF6-BBE6-5359E2596BB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson11-do while loop", "Lesson11-do while loop\Lesson11-do while loop.csproj", "{CFC363BD-DE9E-40D4-89EC-4D5A18184B0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson 11 - for - loop", "Lesson 11 - for - loop\Lesson 11 - for - loop.csproj", "{F604A59A-9338-492D-B3E1-5E5CA81B39EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{0DEC019A-C893-4AF6-BBE6-5359E2596BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DEC019A-C893-4AF6-BBE6-5359E2596BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DEC019A-C893-4AF6-BBE6-5359E2596BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFC363BD-DE9E-40D4-89EC-4D5A18184B0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFC363BD-DE9E-40D4-89EC-4D5A18184B0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFC363BD-DE9E-40D4-89EC-4D5A18184B0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFC363BD-DE9E-40D4-89EC-4D5A18184B0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F604A59A-9338-492D-B3E1-5E5CA81B39EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F604A59A-9338-492D-B3E1-5E5CA81B39EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F604A59A-9338-492D-B3E1-5E5CA81B39EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F604A59A-9338-492D-B3E1-5E5CA81B39EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
