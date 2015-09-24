@@ -17,7 +17,7 @@ namespace Lesson11_While
             while ( getal <= maxGetal )
             {
                 getal++;
-                Console.WriteLine("Hallo {0}", getal);
+                //Console.WriteLine("Hallo {0}", getal);
                 //getal += 1;
                
                 //getal = getal + 1;
@@ -26,10 +26,15 @@ namespace Lesson11_While
             // Maak een raadspelletje voor het raden van een getal tussen de 1 en 5
             // Als de waarde niet is geraden moet er om nieuwe invoer gevraagd worden.
 
-            int teRadenGetal = 3, getalletje=0;
 
+            // Maak een spel waarbij je een getal onder de 20 moet raden. Wanneer je
+            // het getal goed hebt geraden wordt je gefeliciteerd en stopt het spel. Je kunt
+            // ook op de letter s drukken om het spel zonder het getal geraden te hebben te kunnen stoppen.
+            // Je wordt dan niet gefeliciteerd.
+            int teRadenGetal = 3, getalletje=0;
+            
             Console.Write("Raad een getal tussen de 1 en 5, geef uw waarde: ");
-            while (getalletje != teRadenGetal)
+            while (getalletje != teRadenGetal )
             {                
                 string invoer = Console.ReadLine();
                 getalletje = Convert.ToInt32(invoer);
@@ -40,11 +45,22 @@ namespace Lesson11_While
                 }
                 else
                 {
-                    Console.Write("U heeft het niet goed geraden, probeer het nog maar een keer: ");
+                    Console.Write("U heeft het niet goed geraden, druk op 'enter' \n" + 
+                                    "als u verder wilt gaan en op 's' om te stoppen: ");
+                    ConsoleKeyInfo stoppen = Console.ReadKey();
+                    if (stoppen.KeyChar == 's')
+                    {
+                        getalletje = teRadenGetal;
+                    }
+                    else
+                    {
+                        Console.WriteLine("");
+                        Console.Write("Raad een getal tussen de 1 en 5, geef uw waarde: ");
+                    }
                 }
             }
 
-            Console.WriteLine("Bedankt voor het spelen.");
+            Console.WriteLine("\nBedankt voor het spelen.");
 
 
             //Console.WriteLine("Ik kan tot 100500 tellen, kijk maar\n1\n2\n3\n4\n5");
