@@ -14,7 +14,7 @@ namespace Lesson_11___for___loop
 
             // Geef de getallen 0 t/m 10 weer
 
-            for ( int i = 50; i >= 0; i -= 5)
+            for ( int i = 0; i <= 10; i++)
             {
                 Console.WriteLine(i);
             }
