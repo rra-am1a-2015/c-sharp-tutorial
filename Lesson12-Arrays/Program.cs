@@ -16,6 +16,8 @@ namespace Lesson12_Arrays
 
             int[] lichaamsgewicht = new int[10];
 
+            lichaamsgewicht[0] = 10;
+
             lichaamsgewicht[0] = 54;
             lichaamsgewicht[1] = 55;
             lichaamsgewicht[2] = 56;
@@ -30,11 +32,25 @@ namespace Lesson12_Arrays
             string[] dagenVanDeWeek = new string[10];
 
             dagenVanDeWeek[0] = "maandag";
+            dagenVanDeWeek[1] = "dinsdag";
+            dagenVanDeWeek[2] = "woensdag";
+            dagenVanDeWeek[3] = "donderdag";
+            dagenVanDeWeek[4] = "vrijdag";
+            dagenVanDeWeek[5] = "zaterdag";
+            dagenVanDeWeek[6] = "zondag";
+            dagenVanDeWeek[7] = "maandag";
+            dagenVanDeWeek[8] = "dinsdag";
+            dagenVanDeWeek[9] = "woensdag";
 
 
+            for (int i = 0; i < 10; i += 1)
+            {
+                Console.WriteLine("Ik woog afgelopen {0}: {1} kg",  dagenVanDeWeek[i], lichaamsgewicht[i] );
+            }
 
 
-            Console.WriteLine("Ik woog afgelopen {0}: {1}", dagenVanDeWeek[0], lichaamsgewicht[0]);
+            //Console.WriteLine("Ik woog afgelopen {0}: {1} kg", dagenVanDeWeek[0], lichaamsgewicht[0]);
+            //Console.WriteLine("Ik woog afgelopen {0}: {1} kg", dagenVanDeWeek[1], lichaamsgewicht[1]);
 
 
             Console.ReadKey();
