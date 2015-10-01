@@ -16,8 +16,7 @@ namespace Lesson12_Arrays
 
             int[] lichaamsgewicht = new int[10];
 
-            lichaamsgewicht[0] = 10;
-
+            /*
             lichaamsgewicht[0] = 54;
             lichaamsgewicht[1] = 55;
             lichaamsgewicht[2] = 56;
@@ -28,6 +27,28 @@ namespace Lesson12_Arrays
             lichaamsgewicht[7] = 53;
             lichaamsgewicht[8] = 51;
             lichaamsgewicht[9] = 59;
+            */
+
+            int i = 0;
+
+            while ( i < lichaamsgewicht.Length)
+            {
+                // Maak een for-loop die alle tot nu toe ingevoerde gewichten weergeeft pipe-symbol gescheiden.
+                for ( int n = 0; n < lichaamsgewicht.Length; n++)
+                {
+                    Console.Write("{0}\t| ", lichaamsgewicht[n]);
+                } 
+
+                Console.Write("\nGeef uw gewicht: ");
+
+                string invoer = Console.ReadLine();
+
+                lichaamsgewicht[i] = Convert.ToInt32(invoer);
+
+                Console.Clear();
+
+                i++;
+            }
 
             string[] dagenVanDeWeek = new string[10];
 
@@ -42,17 +63,32 @@ namespace Lesson12_Arrays
             dagenVanDeWeek[8] = "dinsdag";
             dagenVanDeWeek[9] = "woensdag";
 
-
-            for (int i = 0; i < 10; i += 1)
+            /*
+            for (int m = 0; m < 10; m += 1)
             {
-                Console.WriteLine("Ik woog afgelopen {0}: {1} kg",  dagenVanDeWeek[i], lichaamsgewicht[i] );
+                Console.WriteLine("Ik woog afgelopen {0}: {1} kg",  dagenVanDeWeek[m], lichaamsgewicht[m] );
+            }
+            */
+            // Definieer een array genaamd BMI die 10 float-waarden kan bevatten. Vul het array met berekende 
+            // BMI waarden voor iemand met een lengte van 1,80 m en de lichaamsgewicht waarden vermeld in
+            // het array lichaamsgewicht. Doe dit met een for-loop
+            float lengte = 1.8f;
+
+            float[] bmi;
+
+            bmi = new float[10];
+
+            for (int j = 0; j < bmi.Length; j++)
+            {
+                bmi[j] = lichaamsgewicht[j] / Convert.ToSingle(Math.Pow((double)lengte, 2));
+                Console.WriteLine("Mijn gewicht was {0} {1} kg, mijn BMI is dan {2}", 
+                                   dagenVanDeWeek[j], 
+                                   lichaamsgewicht[j], 
+                                   Math.Round(bmi[j], 1));
             }
 
-
-            //Console.WriteLine("Ik woog afgelopen {0}: {1} kg", dagenVanDeWeek[0], lichaamsgewicht[0]);
-            //Console.WriteLine("Ik woog afgelopen {0}: {1} kg", dagenVanDeWeek[1], lichaamsgewicht[1]);
-
-
+            DateTime tijd = new DateTime(2015, 10, 1);
+            Console.WriteLine("Tijd is: {0}", tijd.Year);
             Console.ReadKey();
         }
     }
