@@ -31,7 +31,7 @@ namespace Lesson12_Arrays
             lichaamsgewicht[8] = 51;
             lichaamsgewicht[9] = 59;
             
-
+            /*
             int i = 0;
 
             while ( i < lichaamsgewicht.Length)
@@ -52,6 +52,8 @@ namespace Lesson12_Arrays
 
                 i++;
             }
+            */
+
 
             string[] dagenVanDeWeek = new string[10];
 
@@ -89,8 +91,10 @@ namespace Lesson12_Arrays
                                    lichaamsgewicht[j], 
                                    Math.Round(bmi[j], 1));
             }
-            
 
+
+
+            /*
             DateTime[] datum = new DateTime[4];
 
             int h = 0;
@@ -115,12 +119,34 @@ namespace Lesson12_Arrays
                 h++;
                 Console.Clear();
             }
-
+            */
             /*
             DateTime datum = new DateTime(2015, 10, 2);
             Console.WriteLine("Jaartal: {0} - Maand: {1} - dag: {2} samenvattend: {3:D}",
                                 datum.Year, datum.Month, datum.Day, datum.Date );
             */
+
+
+            // Er is een bmi array gemaakt. Bepaal met een for-loop de minimale BMI- waarde in het array.
+            // Schrijf deze waarde naar het console scherm: Uw minimale BMI-waarde was: 27,8
+
+            Console.WriteLine("\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
+
+            float huidigeMinimumBmi = Single.MaxValue;
+
+            for (int i = 0; i < bmi.Length; i = i + 1 )
+            {
+                Console.WriteLine("Mijn bmi-waarde is: {0}", bmi[i]);
+
+                if ( bmi[i] < huidigeMinimumBmi )
+                {
+                    huidigeMinimumBmi = bmi[i];
+                    Console.WriteLine("Mijn huidige laagste BMI-waarde is: {0}", huidigeMinimumBmi);
+                }
+                Console.ReadKey();
+            }
+            Console.WriteLine("De allerlaagste BMI-waarde van deze week was: {0}", huidigeMinimumBmi);
+
             Console.ReadKey();
         }
     }
