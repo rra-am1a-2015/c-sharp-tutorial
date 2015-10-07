@@ -133,6 +133,9 @@ namespace Lesson12_Arrays
             Console.WriteLine("\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
 
             float huidigeMinimumBmi = Single.MaxValue;
+            float huidigeMaximumBmi = 0f;
+            float somBmi = 0f;
+            Console.WriteLine("Mimale waarde float: {0}", huidigeMaximumBmi);
 
             for (int i = 0; i < bmi.Length; i = i + 1 )
             {
@@ -143,9 +146,22 @@ namespace Lesson12_Arrays
                     huidigeMinimumBmi = bmi[i];
                     Console.WriteLine("Mijn huidige laagste BMI-waarde is: {0}", huidigeMinimumBmi);
                 }
-                Console.ReadKey();
+
+                if ( bmi[i] > huidigeMaximumBmi )
+                {
+                    huidigeMaximumBmi = bmi[i];
+                    Console.WriteLine("Mijn huidige hoogste BMI-waarde is: {0}", huidigeMaximumBmi);
+                }
+
+                /* gemiddelde = som van alle gewichten / aantal gewichten */
+                somBmi = somBmi + bmi[i];
             }
+
+            float gemiddeldeBmi = somBmi / bmi.Length;
+
             Console.WriteLine("De allerlaagste BMI-waarde van deze week was: {0}", huidigeMinimumBmi);
+            Console.WriteLine("De allerhoogste BMI-waarde van deze week was: {0}", huidigeMaximumBmi);
+            Console.WriteLine("De gemiddelde BMI-waarde van deze week was: {0}", gemiddeldeBmi);
 
             Console.ReadKey();
         }
