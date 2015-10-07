@@ -11,12 +11,15 @@ namespace Lesson12_Arrays
         static void Main(string[] args)
         {
             Console.Title = "Lesson 12 Arrays";
+            
 
             // We maken een array dat mijn gewicht in kg vastlegt van de afgelopen  10 dagen
 
+
+
             int[] lichaamsgewicht = new int[10];
 
-            /*
+            // Hoe zetten we een integer in het array
             lichaamsgewicht[0] = 54;
             lichaamsgewicht[1] = 55;
             lichaamsgewicht[2] = 56;
@@ -27,7 +30,7 @@ namespace Lesson12_Arrays
             lichaamsgewicht[7] = 53;
             lichaamsgewicht[8] = 51;
             lichaamsgewicht[9] = 59;
-            */
+            
 
             int i = 0;
 
@@ -86,9 +89,38 @@ namespace Lesson12_Arrays
                                    lichaamsgewicht[j], 
                                    Math.Round(bmi[j], 1));
             }
+            
 
-            DateTime tijd = new DateTime(2015, 10, 1);
-            Console.WriteLine("Tijd is: {0}", tijd.Year);
+            DateTime[] datum = new DateTime[4];
+
+            int h = 0;
+            while ( h < datum.Length)
+            {
+                for ( int g = 0; g < datum.Length; g++)
+                {
+                    Console.WriteLine("{0:d}", datum[g]);
+                }
+
+                Console.Write("Geef het jaartal: ");
+                string invoer = Console.ReadLine();
+                int jaartal = Convert.ToInt32(invoer);
+                Console.Write("Geef de maand: ");
+                invoer = Console.ReadLine();
+                int maand = Convert.ToInt32(invoer);
+                Console.Write("Geef de dag: ");
+                invoer = Console.ReadLine();
+                int dag = Convert.ToInt32(invoer);
+
+                datum[h] = new DateTime(jaartal, maand, dag);
+                h++;
+                Console.Clear();
+            }
+
+            /*
+            DateTime datum = new DateTime(2015, 10, 2);
+            Console.WriteLine("Jaartal: {0} - Maand: {1} - dag: {2} samenvattend: {3:D}",
+                                datum.Year, datum.Month, datum.Day, datum.Date );
+            */
             Console.ReadKey();
         }
     }
