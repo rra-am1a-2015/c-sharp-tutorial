@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson 11 - for - loop", "L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson12-Arrays", "Lesson12-Arrays\Lesson12-Arrays.csproj", "{403EFF26-DA61-41D0-84CE-E4252053E159}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson13-Enumerations", "Lesson13-Enumerations\Lesson13-Enumerations.csproj", "{D9DC823A-4E49-4EE8-9D37-51E249439155}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{403EFF26-DA61-41D0-84CE-E4252053E159}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{403EFF26-DA61-41D0-84CE-E4252053E159}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{403EFF26-DA61-41D0-84CE-E4252053E159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9DC823A-4E49-4EE8-9D37-51E249439155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9DC823A-4E49-4EE8-9D37-51E249439155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9DC823A-4E49-4EE8-9D37-51E249439155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9DC823A-4E49-4EE8-9D37-51E249439155}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -163,6 +163,55 @@ namespace Lesson12_Arrays
             Console.WriteLine("De allerhoogste BMI-waarde van deze week was: {0}", huidigeMaximumBmi);
             Console.WriteLine("De gemiddelde BMI-waarde van deze week was: {0}", gemiddeldeBmi);
 
+
+            Console.WriteLine("\n+++++++++++++++++++++++++ -- Foreach Loop -- +++++++++++++++++++++++++++++++++++++++++++++++++\n");
+
+            Console.WriteLine("\n======== -- voorbeeld 1 -- =================\n");
+
+            // Maak een array genaamd voornaam (dus van het type char[])  die als elementen heeft de letters van je voornaam.
+            // Vul dit array met je eigen voornaam
+
+            char[] voornaam = new char[] { 'A', 'r', 'j', 'a', 'n' };
+
+            Console.Write("Mijn voornaam is: ");
+
+            foreach ( char lettertje in voornaam )
+            {
+                Console.Write("{0}", lettertje.ToString());
+            }
+
+            Console.WriteLine("\n======== -- voorbeeld 2 -- =================\n");
+            // Maak een array met daarin de getallen 0 t/m 8. Het array kan alleen positieve gehele getallen bevatten.
+            // Beeld deze getallen af in je consolescherm met een foreach loop
+
+            uint[] getallen = new uint[] { 0, 1, 2, 3, 4, 5, 6, 7, 8 };
+
+            foreach ( uint getal in getallen )
+            {
+                Console.WriteLine("Dit is een getal {0}", getal);
+            }
+
+            Console.WriteLine("\n======== -- voorbeeld 3 -- =================\n");
+            // Maak een array waarin ik een zin kan opslaan. Vul het array met drie zinnen en vraag steeds
+            // aan de gebruiker om invoer van een zin. Sla deze ingevoerde zin dan op in het array. Gebruik
+            // hierbij een foreach - loop. Geef de ingevoerde zinnen weer op het scherm. Gebruik wederom een\
+            // foreach loop
+
+            string[] opslagZinnen = new string[2];
+
+            Console.WriteLine("Deze applicatie leest drie zinnen in die u intypt");
+            
+            /*
+            foreach (string zin in opslagZinnen)
+            {
+                Console.WriteLine("Type een zin in de console: ");
+                string zinnetje = Console.ReadLine();
+                opslagZinnen[zin.IndexOf()] = zinnetje; 
+            }
+            */
+
+
+
             Console.ReadKey();
         }
     }
