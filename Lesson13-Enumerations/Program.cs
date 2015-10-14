@@ -23,6 +23,8 @@ namespace Lesson13_Enumerations
             ijssmaken[0] = ijssmaak.Aardbei;
             ijssmaken[1] = ijssmaak.Chocolade;
 
+                
+
             for ( int j = 0; j < ijssmaken.Length; j++)
             {
                 ijssmaken[j] = smaak;
@@ -31,15 +33,15 @@ namespace Lesson13_Enumerations
 
             string[] mening = new string[6];
 
-            /*
+
+            //lint i = 0;
             foreach ( ijssmaak smaakje in ijssmaken)
             {
-                int i  = ijssmaken.
-                Console.WriteLine("Index i: {0}", ijssmaken.In;
+                smaakje.ToString();
             }
-               */
+              
 
-            //Console.WriteLine("Mijn lievelingsijssmaak is: {0}", smaak.ToString());
+            //Console.WriteLine("Mijn dflievelingsijssmaak is: {0}", smaak.ToString());
 
             // Maak een array ijssmaken die ijssmaak variabelen kan bevatten. Vraag met behulp van een while loop
             // wat de persoon die het programma runt vindt van de verschillende ijssmaken. Sla het commentaar op in een array
