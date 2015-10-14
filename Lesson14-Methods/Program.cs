@@ -25,7 +25,19 @@ namespace Lesson14_Methods
                 doeDeGroetenVan(namen[random.Next(0,4)]);
             }
 
-            Console.WriteLine("De som van 4 + 5 = {0}", optelling());
+            Console.Write("Deze applicatie berekent de som van twee getallen.\n\n" +
+                          "Geef het eerste getal: ");
+            string invoer = Console.ReadLine();
+
+            int getal1 = Convert.ToInt32(invoer);
+
+            Console.Write("Geef het tweede getal: ");
+
+            invoer = Console.ReadLine();
+
+            int getal2 = Convert.ToInt32(invoer);
+
+            Console.WriteLine("De som van {0} + {1} = {2}", getal1, getal2, optelling(4,5));
 
             Console.ReadKey();
         }
@@ -35,15 +47,17 @@ namespace Lesson14_Methods
             Console.WriteLine("Groetjes van {0}", naam);
         }
 
-        private static int optelling()
+
+
+        private static int optelling(int getal1, int getal2)
         {
-            int som = 4 + 5;
+            int som = getal1 + getal2;
             return som;
         }
 
 
         /* Maak een method die twee getallen kan optellen. Regel de invoer met Console.Readline();
-         *
+         * De method regelt niet het vragen om twee getallen. Doe dit buiten de method.
 
 
         */
