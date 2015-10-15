@@ -26,8 +26,8 @@ namespace Lesson14_Methods
             {
                 doeDeGroetenVan(namen[random.Next(0,4)]);
             }
-
-            Console.Write("Deze applicatie berekent de som van twee getallen.\n\n" +
+            Console.WriteLine("\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n");
+            Console.Write("Deze applicatie berekent wat uitkomsten op basis van getallen.\n\n" +
                           "Geef het eerste getal: ");
             string invoer = Console.ReadLine  ();
 
@@ -39,12 +39,27 @@ namespace Lesson14_Methods
 
             int getal2 = Convert.ToInt32(invoer);
 
+            Console.Write("Geef het derde getal: ");
+
+            invoer = Console.ReadLine();
+
+            int getal3 = Convert.ToInt32(invoer);
+
+           
             Console.WriteLine("De som van {0} + {1} = {2}", getal1, getal2, optelling(getal1,getal2));
             Console.WriteLine("Het verschil van {0} - {1} = {2}", getal1, getal2, aftrekken(getal1, getal2));
             Console.WriteLine("Het product van {0} * {1} = {2}", getal1, getal2, product(getal1, getal2));
             Console.WriteLine("Het quotient van {0} : {1} = {2}", getal1, getal2, quotient(getal1, getal2));
             Console.WriteLine("De modulus van {0} % {1} = {2}", getal1, getal2, modulus(getal1, getal2));
-            Console.WriteLine("De som van de drie getallen {0} + {1} + {2} = {3}", getal1, getal2, getal1, optelling(getal1, getal2, getal1));
+            Console.WriteLine("\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n");
+            Console.WriteLine("De som van de drie getallen {0} + {1} + {2} = {3}", getal1, getal2, getal3, optelling(getal1, getal2, getal3));
+            Console.WriteLine("\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n");
+            Console.WriteLine(sorteerHoogNaarLaag(getal1, getal2, getal3));
+            Console.WriteLine("\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n");
+            int[] test = new int[] { 1,2,3,4,5,6,7,8,9,67,6,7,5,6,4,5,45};
+            sorteerHoogNaarLaag(test);
+            
+
             Console.ReadKey();
         }
 
@@ -96,5 +111,37 @@ namespace Lesson14_Methods
          * Maak een method die twee getallen kan vermenigvuldigen. Regel de invoer met Console.Readline();
          * De method regelt niet het vragen om twee getallen. Doe dit buiten de method.
         */
+
+        // Maak een method die van drie getallen de hoogste waarde als eerste afbeeld en de laatste als laatste
+        // Maak een method die een array van getallen in de juiste volgorde zet (van hoog naar laag) en deze afbeeld.
+
+        private static string sorteerHoogNaarLaag(int getal1, int getal2, int getal3)
+        {
+            Console.WriteLine("De getallen gesorteerd van hoog naar laag van {0}, {1}, {2}", getal1, getal2, getal3);
+            int[] getallen = new int[] { getal1, getal2, getal3};
+            Array.Sort(getallen);
+            Array.Reverse(getallen);
+
+            string output = "";
+            foreach (int getal in getallen)
+            {
+                output += "Getal: " + getal + "\n";
+            }
+
+            return output; 
+        }
+
+        private static void sorteerHoogNaarLaag(params int[] getallen)
+        {
+            Array.Sort(getallen);
+            Array.Reverse(getallen);
+
+            foreach (int getal in getallen)
+            {
+                Console.WriteLine(getal);
+            }
+        }
+
+
     }
 }
