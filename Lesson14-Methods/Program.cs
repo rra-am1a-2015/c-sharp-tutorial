@@ -58,7 +58,8 @@ namespace Lesson14_Methods
 
         /* Maak een method die twee getallen kan optellen. Regel de invoer met Console.Readline();
          * De method regelt niet het vragen om twee getallen. Doe dit buiten de method.
-
+         * Maak een method die twee getallen kan vermenigvuldigen. Regel de invoer met Console.Readline();
+         * De method regelt niet het vragen om twee getallen. Doe dit buiten de method.
 
         */
     }
