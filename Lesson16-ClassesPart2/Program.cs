@@ -20,6 +20,14 @@ namespace Lesson16_ClassesPart2
 
             Console.WriteLine("Prijs mij de hemel in: {0}", aanmoediging.bejubelen());
 
+            // Maak een class rekenen waarvan de constructor twee getallen accepteert (int's). Sla deze
+            // twee getallen op als field. En maak 5 methoden in deze class (optellen, aftrekken, vermenigvuldigen
+            // delen en modulus. Geef van elke method de uitkomst weer op het scherm d.m.v. het object dat je hebt
+            // gemaakt van de class rekenen
+
+            Rekenen rekenopgave = new Rekenen(4, 10);
+            Console.WriteLine("De som van {0} + {1} = {2}", rekenopgave.Getal1, rekenopgave.Getal2,
+                                rekenopgave.optelling());
             Console.ReadLine();
         }
     }
@@ -50,6 +58,39 @@ namespace Lesson16_ClassesPart2
         public string bejubelen()
         {
             return "Je bent werkelijk fan.....tisch " + this.naam + "!!!";
+        }
+    }
+
+    // Dit is de class definitie
+    class Rekenen
+    {
+        // Fields
+        private int getal1 = 0;
+        private int getal2 = 0;
+
+        // Properties
+        public int Getal1
+        {
+            get { return this.getal1; }
+        }
+
+        public int Getal2
+        {
+            get { return this.getal2;  }
+        }
+        
+        // Dit is de constructor
+        public Rekenen(int getal1, int getal2)
+        {
+            this.getal1 = getal1;
+            this.getal2 = getal2;
+        }
+
+        // Method
+        public int optelling()
+        {
+            int som = this.getal1 + this.getal2;
+            return som;
         }
     }
 }
