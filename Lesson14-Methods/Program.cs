@@ -56,10 +56,19 @@ namespace Lesson14_Methods
             Console.WriteLine("\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n");
             Console.WriteLine(sorteerHoogNaarLaag(getal1, getal2, getal3));
             Console.WriteLine("\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n");
-            int[] test = new int[] { 1,2,3,4,5,6,7,8,9,67,6,7,5,6,4,5,45};
-            sorteerHoogNaarLaag(test);
-            
+            Console.WriteLine("Deze applicatie blijft om integer invoer vragen totdat u de 0-waarde invoert.\n" +
+                                "daarna worden de waarden van hoog naar laag onder elkaar weergegeven");
+            /*
+            int[] test = new int[1000];
+            do
+            {
 
+            } while ();
+            */
+            // Huiswerk voor de volgende keer dit afmaken (params while loop)
+            //sorteerHoogNaarLaag(test);
+
+            Console.WriteLine("De som van 12.3f en 11.2f = {0}", optelling(12.3f, 11.2f));
             Console.ReadKey();
         }
 
@@ -72,6 +81,12 @@ namespace Lesson14_Methods
         {
             int som = getal1 + getal2;
             return som;
+        }
+
+        private static int optelling(float getal1, float getal2)
+        {
+            float som = getal1 + getal2;
+            return Convert.ToInt32(som);
         }
 
         private static int optelling(int getal1, int getal2, int getal3)
