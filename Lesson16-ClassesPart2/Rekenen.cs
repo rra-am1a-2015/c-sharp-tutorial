@@ -64,8 +64,18 @@ namespace Lesson16_ClassesPart2
             return verschil;
         }
 
+        public void herbereken(int getal1, int getal2)
+        {
+            this.getal1 = getal1;
+            this.getal2 = getal2;
+            this.show();
+        }
+
         public void show()
         {
+            Console.WriteLine("\n***************************************************\n" +
+                              "Voor de onderstaande berekeningen worden de \n" +
+                              "getallen {0} en {1} gebruikt.\n", this.getal1, this.getal2);
             Console.WriteLine("De som van {0} + {1} = {2}", this.Getal1, this.Getal2,
                                 this.optelling());
             Console.WriteLine("Het verschil van {0} - {1} = {2}", this.Getal1, this.Getal2,
@@ -76,6 +86,7 @@ namespace Lesson16_ClassesPart2
                                 this.modulus());
             Console.WriteLine("Het product van {0} * {1} = {2}", this.Getal1, this.Getal2,
                                 this.product());
+            Console.WriteLine("\n=====================================================\n");
         }
     }
 }

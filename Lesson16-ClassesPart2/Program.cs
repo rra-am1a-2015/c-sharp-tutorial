@@ -30,6 +30,8 @@ namespace Lesson16_ClassesPart2
             rekenopgave.Getal1 = 34;
             rekenopgave.Getal2 = 56;
             rekenopgave.show();
+            rekenopgave.herbereken(120, -34);
+            rekenopgave.herbereken(203, 234);
 
             Console.ReadLine();
         }
