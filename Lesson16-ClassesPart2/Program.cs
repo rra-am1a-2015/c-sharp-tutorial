@@ -26,8 +26,7 @@ namespace Lesson16_ClassesPart2
             // gemaakt van de class rekenen
 
             Rekenen rekenopgave = new Rekenen(4, 10);
-            Console.WriteLine("De som van {0} + {1} = {2}", rekenopgave.Getal1, rekenopgave.Getal2,
-                                rekenopgave.optelling());
+            
             Console.ReadLine();
         }
     }
@@ -91,6 +90,44 @@ namespace Lesson16_ClassesPart2
         {
             int som = this.getal1 + this.getal2;
             return som;
+        }
+
+        public float product()
+        {
+            float product = this.getal1 * this.getal2;
+            return product;
+        }
+
+        public float quotient()
+        {
+            float quotient = (float)this.getal1 / this.getal2;
+            return quotient;
+        }
+
+        public int modulus()
+        {
+            int modulus = this.getal1 % this.getal2;
+            return modulus;
+        }
+
+        public int aftrekken()
+        {
+            int verschil = this.getal1 - this.getal2;
+            return verschil;
+        }
+
+        public void show()
+        {
+            Console.WriteLine("De som van {0} + {1} = {2}", this.Getal1, this.Getal2,
+                                this.optelling());
+            Console.WriteLine("Het verschil van {0} - {1} = {2}", this.Getal1, this.Getal2,
+                                this.aftrekken());
+            Console.WriteLine("Het quotient van {0} / {1} = {2}", this..Getal1, this.Getal2,
+                                this.quotient());
+            Console.WriteLine("De modulus van {0} % {1} = {2}", this.Getal1, this.Getal2,
+                                this.modulus());
+            Console.WriteLine("Het product van {0} * {1} = {2}", this.Getal1, this.Getal2,
+                                this.product());
         }
     }
 }
