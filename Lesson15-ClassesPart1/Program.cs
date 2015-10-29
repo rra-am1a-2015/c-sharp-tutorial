@@ -40,7 +40,7 @@ namespace Lesson15_ClassesPart1
 
             Console.WriteLine("Mijn willekeurige getal is: {0}", random.ToString());
 
-            int[] willekeurigeGetallenArray = new int[100];
+            int[] willekeurigeGetallenArray = new int[10];
 
             int som = 0;
             for (int i = 0; i < willekeurigeGetallenArray.Length; i++)

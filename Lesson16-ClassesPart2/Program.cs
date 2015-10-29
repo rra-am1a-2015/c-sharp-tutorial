@@ -26,108 +26,16 @@ namespace Lesson16_ClassesPart2
             // gemaakt van de class rekenen
 
             Rekenen rekenopgave = new Rekenen(4, 10);
-            
+            rekenopgave.show();
+            rekenopgave.Getal1 = 34;
+            rekenopgave.Getal2 = 56;
+            rekenopgave.show();
+
             Console.ReadLine();
         }
     }
 
-    class Motivatie
-    {
-        // Dit is de standaard constructor van de class. De constructor herken je aan 
-        // het feit dat hij dezelfde naam heeft als de class en de method heeft geen
-        // return type.
-        // Fields
-        string naam = "Arjan";
+   
 
-        public Motivatie()
-        {
-
-        }
-
-        public Motivatie(string naam)
-        {
-            this.naam = naam;
-        }
-
-        public string aanmoedigen()
-        {
-            return "Dat heb je weer uitstekend gedaan vandaag " + this.naam;
-        }
-
-        public string bejubelen()
-        {
-            return "Je bent werkelijk fan.....tisch " + this.naam + "!!!";
-        }
-    }
-
-    // Dit is de class definitie
-    class Rekenen
-    {
-        // Fields
-        private int getal1 = 0;
-        private int getal2 = 0;
-
-        // Properties
-        public int Getal1
-        {
-            get { return this.getal1; }
-        }
-
-        public int Getal2
-        {
-            get { return this.getal2;  }
-        }
-        
-        // Dit is de constructor
-        public Rekenen(int getal1, int getal2)
-        {
-            this.getal1 = getal1;
-            this.getal2 = getal2;
-        }
-
-        // Method
-        public int optelling()
-        {
-            int som = this.getal1 + this.getal2;
-            return som;
-        }
-
-        public float product()
-        {
-            float product = this.getal1 * this.getal2;
-            return product;
-        }
-
-        public float quotient()
-        {
-            float quotient = (float)this.getal1 / this.getal2;
-            return quotient;
-        }
-
-        public int modulus()
-        {
-            int modulus = this.getal1 % this.getal2;
-            return modulus;
-        }
-
-        public int aftrekken()
-        {
-            int verschil = this.getal1 - this.getal2;
-            return verschil;
-        }
-
-        public void show()
-        {
-            Console.WriteLine("De som van {0} + {1} = {2}", this.Getal1, this.Getal2,
-                                this.optelling());
-            Console.WriteLine("Het verschil van {0} - {1} = {2}", this.Getal1, this.Getal2,
-                                this.aftrekken());
-            Console.WriteLine("Het quotient van {0} / {1} = {2}", this..Getal1, this.Getal2,
-                                this.quotient());
-            Console.WriteLine("De modulus van {0} % {1} = {2}", this.Getal1, this.Getal2,
-                                this.modulus());
-            Console.WriteLine("Het product van {0} * {1} = {2}", this.Getal1, this.Getal2,
-                                this.product());
-        }
-    }
+    
 }
