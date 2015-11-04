@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson15-ClassesPart1", "Le
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson16-ClassesPart2", "Lesson16-ClassesPart2\Lesson16-ClassesPart2.csproj", "{C7689EC4-72F8-4536-87E4-3939B46206A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson16-ClassesPart3", "Lesson16-ClassesPart3\Lesson16-ClassesPart3.csproj", "{9C154772-8BD1-469B-B0F9-8E2D4D5D9BB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toets 2 Methods bespreking", "Toets 2 Methods bespreking\Toets 2 Methods bespreking.csproj", "{5E01DDB3-D001-451E-AFCF-961D4E240972}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,14 @@ Global
 		{C7689EC4-72F8-4536-87E4-3939B46206A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7689EC4-72F8-4536-87E4-3939B46206A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7689EC4-72F8-4536-87E4-3939B46206A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C154772-8BD1-469B-B0F9-8E2D4D5D9BB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C154772-8BD1-469B-B0F9-8E2D4D5D9BB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C154772-8BD1-469B-B0F9-8E2D4D5D9BB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C154772-8BD1-469B-B0F9-8E2D4D5D9BB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E01DDB3-D001-451E-AFCF-961D4E240972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E01DDB3-D001-451E-AFCF-961D4E240972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E01DDB3-D001-451E-AFCF-961D4E240972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E01DDB3-D001-451E-AFCF-961D4E240972}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
