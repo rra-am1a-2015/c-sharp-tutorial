@@ -13,6 +13,8 @@ namespace Lesson16_ClassesPart3
         private string type = "Nog geen type gekozen";
         private short aantalDeuren = 5;
         private float brandstofVerbruik;
+        private kleur
+
 
         //Properties, met getters vraag je de waarde van een Field op
         //met setters verander je de waarde van een Field
@@ -31,7 +33,11 @@ namespace Lesson16_ClassesPart3
             get { return this.aantalDeuren; }
             set { this.aantalDeuren = value; }
         }
-
+        public float BrandstofVerbruik
+        {
+            get { return this.brandstofVerbruik; }
+            set { this.brandstofVerbruik = value; }
+        }
 
         //Constructor
         public Auto()

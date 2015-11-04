@@ -15,6 +15,8 @@ namespace Lesson16_ClassesPart3
             vehicle.Kenmerken();
             vehicle.Carbrand = "Dacia";
             vehicle.Type = "Logan";
+            vehicle.AantalDeuren = 2;
+            vehicle.BrandstofVerbruik = 13.3f;
             vehicle.Kenmerken();
             Console.ReadKey();
         }
