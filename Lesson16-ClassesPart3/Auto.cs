@@ -13,7 +13,8 @@ namespace Lesson16_ClassesPart3
         private string type = "Nog geen type gekozen";
         private short aantalDeuren = 5;
         private float brandstofVerbruik;
-        private kleur
+        private kleur kleurUitvoering;
+        private string kenteken;
 
 
         //Properties, met getters vraag je de waarde van een Field op
@@ -38,6 +39,16 @@ namespace Lesson16_ClassesPart3
             get { return this.brandstofVerbruik; }
             set { this.brandstofVerbruik = value; }
         }
+        public kleur KleurUitvoering
+        {
+               get { return this.kleurUitvoering; }
+               set { this.kleurUitvoering = value; }
+        }
+        public string Kenteken
+        {
+            set { this.kenteken = value; }
+            get { return this.kenteken; }
+        }
 
         //Constructor
         public Auto()
@@ -45,12 +56,15 @@ namespace Lesson16_ClassesPart3
 
         }
 
-        public Auto(string carbrand, string type, short aantalDeuren, float brandstofVerbruik)
+        public Auto(string carbrand, string type, short aantalDeuren, float brandstofVerbruik,
+                        kleur kleurUitvoering, string kenteken)
         {
             this.carbrand = carbrand;
             this.type = type;
             this.aantalDeuren = aantalDeuren;
             this.brandstofVerbruik = brandstofVerbruik;
+            this.kleurUitvoering = kleurUitvoering;
+            this.kenteken = kenteken;
         }
 
         //Methods
@@ -60,9 +74,12 @@ namespace Lesson16_ClassesPart3
                               " Toekomstige automerk\t\t\t{0}\n" +
                               " Toekomstige autotype\t\t\t{1}\n" +
                               " Aantal deuren toekomstige auto:\t{2}\n" +
-                              " Het brandstofverbruik is:\t\t{3} liter/100km" +
+                              " Het brandstofverbruik is:\t\t{3} liter/100km\n" +
+                              " De kleur is:\t\t\t\t{4}\n" +
+                              " Het kenteken is:\t\t\t{5}\n" + 
                               "\n************************************************************************\n",
-                                 this.carbrand, this.type, this.aantalDeuren, this.brandstofVerbruik);
+                                 this.carbrand, this.type, this.aantalDeuren, this.brandstofVerbruik,
+                                 this.kleurUitvoering, this.kenteken);
         }
 
     }

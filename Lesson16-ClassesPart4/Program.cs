@@ -4,7 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lesson16_ClassesPart3
+namespace Lesson16_ClassesPart4
 {
-    enum kleur { Rood, Blauw, Goud, Brons, Zilver, Groen};
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
 }
