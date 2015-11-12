@@ -38,13 +38,7 @@ namespace Lesson16_ClassesPart5
                 mijnLaptop[i].ShowLaptops();
             }
 
-            string output = "" + Directory.GetCurrentDirectory() + "\r\n";
-            for ( int i = 0; i < mijnLaptop.Length; i++)
-            {
-                output += mijnLaptop[i].ShowLaptopsToText();
-            }
-
-            File.WriteAllText(@"c:\test\test.txt", output);
+            Laptop.writeToTextFile(mijnLaptop);            
             
             Console.ReadKey();
         }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -135,6 +136,19 @@ namespace Lesson16_ClassesPart5
                                         this.booleanTranslator(this.touchScreen)
                                         );
             return text;
+        }
+
+        public static void writeToTextFile(Laptop[] laptopArray)
+        {
+            string output = "";
+            for (int i = 0; i < laptopArray.Length; i++)
+            {
+                output += laptopArray[i].ShowLaptopsToText();
+            }
+
+            string targetDirectory = Directory.GetCurrentDirectory() + @"\output";
+            Directory.CreateDirectory(targetDirectory);
+            File.WriteAllText(targetDirectory + @"\test.txt", output);
         }
 
         private string booleanTranslator(bool trueFalse)
